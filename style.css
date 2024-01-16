@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'PlayFair';
+}
+/* video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+
+} */
+.container{
+    background-image: url(media/images/green.jpg);;
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    /* z-index: -1; */
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.navbar p{
+    text-decoration: none;
+    color:rgb(250, 255, 255);
+    font-family: 'PressStart2PRegular';
+    font-size: 25px;
+    font-weight: 600;
+}
+.logo{
+  margin: 1% ;
+  width:100px;
+  cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav ul li{
+    padding-right: 3%;
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:aqua;
+    font-family: 'Space Grotesk';
+    font-size: 13px,bold;
+    text-shadow: 4px 4px 4px rgb(79, 79, 79);
+    
+}
+nav ul li a:hover,nav ul li a.active{
+    color: #ebe1e1;
+}
+
+.row{
+    display: flex; 
+    align-items: center;
+}
+col{
+    flex-basis: 20%;
+}
+col h1{
+ 
+ font-family:'Space Grotesk';
+ font-size: 55px;
+ color:#00ffff;
+ text-shadow: 4px 4px 4px #3e3d3d;
+}
+
+.brand{
+    font-family:'Space Grotesk';
+    color: white;
+    font-size: 20px ;
+    line-height:20px ;
+    margin-left: 6%;
+}
+button{
+    width: 180px;
+    color: rgb(3, 2, 2);
+    height: 60px;
+    font-size: 20px;
+    font-weight:4px;
+    padding: 12p,0;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    margin-top: 30px;
+    margin-left: 100px; 
+    background-color: #feffff;
+    cursor: pointer;
+}
+button a {
+    color: rgb(3, 2, 2);
+    height: 60px;
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+button:active{
+   background-color:#00ffff;
+   color:white;
+}
+.card{
+    width:200px;
+    height: 230px;
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    border-radius: 20px;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition:transform 0.7s ;
+    box-shadow: (rgb(96, 94, 94),rgb(107, 106, 106));
+}
+/* .card1{
+    background-image: url(media/images/instagram.jpg);
+   
+}
+.card2{
+    background-image: url(media/images/X.jpg);
+    
+} */
+/* .card3{
+    background-image: url(media/images/tiktok.jpg)
+   
+}
+.card4{
+    background-image: url(media/images/youtube.jpg);
+   
+} */
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.checkbtn{
+    font-size:30px ;
+    color: white;
+    float: right;
+    line-height:80px ;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.about{
+    margin: 0;
+    padding:0;
+    align-items:center;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color:#000000; 
+}
+.about-section{
+    background:url(media/images/3d\ computer.jpg) no-repeat  left;
+    background-size: 57%;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-container{
+    width: 35%;
+    float: right;
+    border: 2px solid  grey;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(5px);
+    border-radius: 16px;
+    padding-left: 100%;
+ 
+
+}
+.inner-container h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family:'Space Grotesk';
+    color: aqua;
+}
+
+.text{
+    font-size:16px ;
+    font-family:'Space Grotesk';
+    color: white;
+    line-height: 15px;
+    text-align:justify;
+    margin-bottom: 40px;
+}
+.title h2{
+    background-color: #000000;
+    text-align: center;
+    padding-top:50px;
+    color: #00ffff;
+    font-family: 'Space Grotesk';
+    font-size: 42px;
+}
+.row3{
+    background-color: #000000;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 30px;
+    align-items: center;
+    
+}
+
+.box{   
+    width: 280px;
+    height: 280px;
+    border: 2px solid grey;
+    background-color:rgba(255, 255, 255, 0.3);
+    backdrop-filter:blur(5px);
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+.box img{
+    width: 150px;
+    padding-top: 5%;
+    padding-left:35%;
+}
+.box h3{
+
+    padding-top: 10px;
+    font-family: 'Space Grotesk';
+    font-size: medium;
+    color: #ffffff;
+    text-align: center;
+}
+.box p{
+    padding-top: 5%;
+    padding-left: 20%;
+    font-family: 'Space Grotesk';
+    color:white;
+
+}
+.horizontal {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+}
+  
+.scroll-parent {
+    position: relative;
+    width: 100vw;
+    height: 20rem;
+    padding: 2rem 0;
+    overflow-x: hidden;
+
+}
+  
+.scroll-element {
+    width: inherit;
+    height: inherit;
+    color: #3e3d3d;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+  
+.scroll-element img {
+    width: 15%;
+   
+    
+}
+
+.primary {
+    animation: primary 30s linear infinite;
+}
+  
+.secondary {
+    animation: secondary 30s linear infinite;
+}
+  
+@keyframes primary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+}
+  
+@keyframes secondary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
+}
+.row4{
+    margin: 0;
+    padding:0;
+    background-color: #000000;
+    display: flex;
+
+}
+h1{
+    color: #00ffff;
+    padding-left: 80px;
+    font-family: 'Space Grotesk';
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: -40px;
+}
+form{
+    margin-left: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    gap: 1.5rem;
+    border: 2px solid grey;
+    background-color:rgba(255, 255, 255, 0.3);
+    backdrop-filter:blur(5px);
+    border-radius: 10px;
+}
+input,
+select,
+textarea{
+    font-family: 'Space Grotesk';
+    padding: 5px;
+    background: white;
+    border: 1px solid rgb(46, 47, 47);
+    border-radius:2px;
+}
+textarea{
+    height: 6rem;
+}
+
+.socials{ 
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.socials h1 {
+  font-size:  30px; 
+  color: aqua;
+  font-family: 'Space Grotesk';
+  margin-bottom: 40px;
+  margin-top: -40px;
+
+}
+.social-links a img{
+ width: 35px;
+ height: 35px;
+ text-align: center;
+ text-decoration: none;
+ color: aqua;
+ margin: 0 30px;
+ border-radius: 20%;
+
+}
+.decor img{
+    padding-top: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 10%;
+}
+@media only screen and  (max-width:1280px ){
+    label.logo{
+        font-size: 30px;
+        padding-right: 50px;
+    }
+    nav ul li a{
+        font-size:15px;
+
+    }
+    .card{
+        width: 180px;
+        height: 200px;
+        display: inline-block;
+        border-radius: 60px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+        transition:transform 0.5s ;
+        box-shadow: (rgb(227, 225, 225),rgb(111, 107, 107));
+    }
+
+    .col h1{ 
+        font-family: 'Space Grotesk';
+        color: aqua;
+        font-size: 65px;
+        text-shadow: 4px 4px 4px #000000;
+    }
+    button{
+     width: 130px;
+     color:black;
+     height: 30px;
+     font-size: 20px;
+     font-weight:4px;
+     padding: 12p,0;
+     border-radius: 20px;
+     border: 0;
+     outline: none;
+     margin-top: 25px;
+     margin-left: 100px;
+     background-color: white;
+     box-shadow:(#ebe1e1 ,rgba(219, 213, 213, 0.19));
+     cursor: pointer;
+    }
+    .inner-container{
+        padding:80px;
+    }
+}
+
+@media only screen and  (max-width :768px) {
+    .checkbtn{
+        display:block;
+     }
+   ul{
+    position:fixed;
+    width: 40%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(6px);
+    border-radius: 10px;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 15px;
+    }
+    nav ul li a{
+        font-size: 15px;
+        font-family:'Space Grotesk';
+    }
+     a:hover.a{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    button{
+        width: 130px;
+        color:rgb(3, 3, 3);
+        height: 30px;
+        font-size: 15px;
+        font-weight:4px;
+        padding: 12p,0;
+        border-radius: 20px;
+        border: 0;
+        outline: none;
+        margin-top: 25px;
+        margin-left: 100px;
+        background-color: #ffffff;
+        cursor: pointer;
+     }
+    .card{
+        width: 80px;
+        height: 87.5px;
+        background-position:right;
+        display: inline-block;
+        border-radius: 100px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+        transition:transform 0.5s ;
+        box-shadow: (rgb(227, 225, 225),rgb(111, 107, 107));
+    }
+    .col h1{
+        font-family: 'Space Grotesk';
+        color: aqua;
+        font-size: 40px;
+        text-shadow: 4px 4px 4px #0f0d0d;
+    }
+    
+    
+}
