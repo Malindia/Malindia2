@@ -31,9 +31,9 @@
 .navbar p{
     text-decoration: none;
     color:rgb(250, 255, 255);
-    font-family: 'PressStart2PRegular';
-    font-size: 25px;
-    font-weight: 600;
+    font-family: 'Space Grotesk';
+    font-size: 45px;
+    font-weight: 800;
 }
 .logo{
   margin: 1% ;
@@ -214,6 +214,7 @@ button:active{
     font-size: 42px;
 }
 .row3{
+    padding-left: 50px;
     background-color: #000000;
     margin: auto;
     display: grid;
@@ -224,8 +225,8 @@ button:active{
 }
 
 .box{   
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     border: 2px solid grey;
     background-color:rgba(255, 255, 255, 0.3);
     backdrop-filter:blur(5px);
@@ -234,12 +235,11 @@ button:active{
    
 }
 .box img{
-    width: 150px;
+    width: 100px;
     padding-top: 5%;
     padding-left:35%;
 }
 .box h3{
-
     padding-top: 10px;
     font-family: 'Space Grotesk';
     font-size: medium;
@@ -250,6 +250,7 @@ button:active{
     padding-top: 5%;
     padding-left: 20%;
     font-family: 'Space Grotesk';
+    font-size: 15px;
     color:white;
 
 }
@@ -503,6 +504,5 @@ textarea{
         font-size: 40px;
         text-shadow: 4px 4px 4px #0f0d0d;
     }
-    
     
 }
