@@ -11,7 +11,7 @@
     width: 100%;
     overflow-x: hidden;
   }
-  
+  /*home section */
   .container {
     background-image: url(media/images/green.jpg);
     width: auto;
@@ -21,7 +21,7 @@
     background-size: cover;
     box-sizing: border-box;
   }
-  
+   /*Nav bar section*/
   .navbar {
     height: 12%;
     display: flex;
@@ -35,13 +35,13 @@
     font-size: 45px;
     font-weight: 800;
   }
-  
+   /*Logo setting*/
   .logo {
     margin: 1%;
     width: 100px;
     cursor: pointer;
   }
-  
+    /*NavBar screen setting*/
   nav {
     flex: 1;
     text-align: right;
@@ -67,7 +67,7 @@
   nav ul li a.active {
     color: #ebe1e1;
   }
-  
+    /*body section for home page*/
   .row {
     display: flex;
     align-items: center;
@@ -154,7 +154,7 @@
   #check {
     display: none;
   }
-  
+    /*About section*/
   .about {
     margin: 0;
     padding: 0;
@@ -179,7 +179,7 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 16px;
-    padding-left: 100%;
+    padding-left: 100px;
   }
   
   .inner-container h2 {
@@ -521,8 +521,7 @@
       transition: all 0.5s;
       z-index: 2;
     }
-  
-    .navbar .checkbtn {
+        .navbar .checkbtn {
       display: block;
       z-index: 3;
     }
