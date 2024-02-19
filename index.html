@@ -65,15 +65,16 @@
       </section>
     
     </div>
-    <section class="about-us">
+    <section class="about-us" id= "about">
       <div class="about-content">
         <h1>About us</h1>
         <h2>We Are Increasing Business Success With Technology</h2>
-        <p>An IT solution service company may serve clients from various industries such as healthcare, finance, education, and manufacturing. They may work on a project basis, providing services for a specific project or on a long-term basis... Amazing communication. Best trending designing experience Email & Live chat.</p>
+        <p>
+        Malindia Design and Development Company is a forward-thinking agency specializing in innovative design and development solutions for business success. With a keen focus on user-centric designs and sustainable development practices, Malindia stands out for its commitment to delivering high-quality, impactful projects. Our team of skilled professionals leverages the latest technologies and creative strategies to bring our clients' visions to life, ensuring each project is tailored to meet specific needs and exceed expectations. Whether it's cutting-edge web design, mobile app development, or custom software solutions, Malindia is dedicated to driving success and fostering growth for businesses around the globe</p>
       </div>
       <div class="images">
-        <img src="media/images/3d computer.jpg" alt="Team Meeting" class="image-large">
-        <img src="media/images/bigdata.jpg" alt="Business Professional" class="image-small">
+        <img src="media/images/ser.jpg" alt="Team Meeting" class="image-large">
+        <img src="media/images/3d computer.jpg" alt="Business Professional" class="image-small">
       </div>
     </section>
     <!-- <section class="about" id="about">
@@ -116,7 +117,7 @@
         </div>
         <div class="box">
           <div class="icon">
-            <img src="media/svg/SEO.svg" alt="social_growth">
+            <img src="media/svg/softw.svg" alt="social_growth">
             <h3>Software Development</h3>
             <p> Offering bespoke software solutions, including CRM systems,
               project management tools, and custom applications to streamline business operations.</p>
@@ -124,7 +125,7 @@
         </div>
         <div class="box">
           <div class="icon">
-            <img src="media/svg/newsletter_re_wrob.svg" alt="newsletter">
+            <img src="media/svg/ecom.svg" alt="newsletter">
             <h3>E-commerce Solutions</h3>
             <p>Developing robust online stores with seamless payment integration, 
               inventory management, and a user-friendly shopping experience.</p>
@@ -139,13 +140,14 @@
         </div>
         <div class="box">
           <div class="icon">
-            <img src="media/svg/analytics.svg" alt="Report">
+            <img src="media/svg/branding.svg" alt="Report">
             <h3>Brand Identity</h3>
             <p> Creating cohesive brand identities that resonate with target audiences and stand out in the marketplace. </p>
           </div>
         </div>
       </div>
     </section>
+    
     <section class="horizontal" id ='portfolio'>
       <div class="scroll-parent">
         <div class="scroll-element primary">
@@ -194,10 +196,11 @@
         </div>
       </div>
     </section>
+    
     <section class = "row4" id="Contact">
       <div class="forms">
         <h1>Contact us </h1>
-        <form >
+        <form action="sendmail.php" method="post">
           <input type="text" name ="Name" placeholder="Full Name " required>
           <input type="email"  name  ="email" placeholder="Email" required>
           <select name  ="Country">
@@ -446,38 +449,23 @@
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
           </select>
-          <input type="number" name="Telephone name " placeholder="Telephone Number">
+          <input type="number" name="telephone " placeholder="Telephone">
           <textarea name="message" placeholder="Message" required></textarea>
           <button type="submit">Submit</button>
         </form>    
       </div>
       <div class="socials">
-        <h1>our socials</h1>
-       <div class="social-links">
-          <a href="https://www.linkedin.com/company/malindia-marketing/about/?viewAsMember=true"> <img
-          src="media/svg/linkedin.svg"
-         /></a>
-         <a href=""><img
-          src="media/svg/facebook.svg"
-         /></a>
-         <a href=""><img
-          src="media/svg/instagram.svg"
-         /></a>
-         <!-- <a href=""><img
-          src="media/svg/white X.svg"
-         /></a> -->
-        </div>
+       
         <div class="decor">
-          <img src="media/images/laptop.jpg" alt="">
+          <img src="media/images/3d computer.jpg" alt="">
         </div>
       </div>
     </section>
 
-
-    <footer class="site-footer">
-    <div class="container">
-    <div class="footer-about">
-      <h3>Malindia Design & Development</h3>
+   <footer class="site-footer">
+   <div class="container">
+   <div class="footer-about">
+      <h3>Malindia Design & Development Agency</h3>
       <p>Innovating Design & Development for your digital success.</p>
     </div>
     <div class="footer-nav">
@@ -491,8 +479,8 @@
     </div>
     <div class="footer-socials">
       <a href="https://www.linkedin.com/company/malindia-marketing/about/?viewAsMember=true"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61551527990982&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/malindia_design_development?igsh=MWkwM2JkbzhyMWxjcA=="><i class="fab fa-instagram"></i></a>
     </div>
     <div class="footer-contact">
       <p>Email: info@malindia.com | Tel: +254 703 988695</p>
@@ -502,7 +490,19 @@
     </div>
     </div>
     </footer>
-
-   
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const check = document.getElementById('check');
+        const navLinks = document.querySelectorAll('nav ul li a');
+      
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            
+            check.checked = false;
+          });
+        });
+      });
+    </script>
+      
   </body>
 </html>
