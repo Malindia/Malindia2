@@ -200,7 +200,7 @@
     <section class = "row4" id="Contact">
       <div class="forms">
         <h1>Contact us </h1>
-        <form action="sendmail.php" method="post">
+        <form action="http://192.168.100.3:3000/api/submit" method="post">
           <input type="text" name ="Name" placeholder="Full Name " required>
           <input type="email"  name  ="email" placeholder="Email" required>
           <select name  ="Country">
@@ -449,7 +449,7 @@
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
           </select>
-          <input type="number" name="telephone " placeholder="Telephone">
+          <input type="tel" name="telephone" placeholder="Telephone">
           <textarea name="message" placeholder="Message" required></textarea>
           <button type="submit">Submit</button>
         </form>    
